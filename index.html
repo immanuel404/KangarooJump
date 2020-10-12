@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" onclick="jump()">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kangaroo Jump</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/kangaroo.png" type="image/gif" sizes="16x16">
+    <!-- CSS Link -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<h3 id="media-query-phone">SWITCH TO LANDSCAPE MODE TO PLAY</h3>
+
+	<!-- INTRO TEXT & START BUTTON -->
+	<div id="intro">
+		<h1>START GAME</h1>
+		<button id="start" onclick="start()">start</button>
+		<button style="display:none; margin:20px auto;" id="restart" onclick="restart()">restart</button>
+		<h3 id="timer">Points: 0</h3>
+	</div>
+
+	<!-- GAME CONTAINER -->
+	<div style="display:none;" id="game-container">
+		<div id="game">
+			<div id="character"></div>
+			<div id="block"></div>
+			<h1 style="display:none;" id="message">YOU LOST!!!</h1>
+		</div>
+	</div>
+
+	<div style="text-align:center; margin:20px auto;">
+		<p><a style="color:lightgrey;" href="http://webcitizen.epizy.com/">By: WebCitizen</a></p>
+	</div>
+
+<script src="script.js"></script>
+</body>
+</html>

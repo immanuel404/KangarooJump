@@ -1,0 +1,87 @@
+/*GENERAL*/
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Press Start 2P', cursive;
+}
+
+/*INTRO-AREA*/
+#intro {
+	width: 100%;
+	text-align: center;
+	margin: 40px auto;
+}
+#intro button {
+	margin: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: red;
+	transition: 0.5s;
+}
+#intro button:hover {
+	color: white;
+}
+
+/*GAME AREA*/
+#game {
+	width: 600px;
+	height: 200px;
+	color: red;
+	margin: 20px auto;
+	text-align: center;
+	border: 1px dotted black;
+	overflow-x: hidden;
+}
+#character {
+	background: url("img/kangaroo.png");
+	background-size: cover;
+	width: 40px;
+	height: 50px;
+	position: relative;
+	top: 150px;
+}
+.animate {
+	animation: jump 500ms;
+}
+@keyframes jump {
+	0% {top: 150px;}
+	40%{top: 100px;}
+	60% {top: 100px;}
+	100%{top: 150px;}
+}
+#block {
+	background: url("img/ball.png");
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: 130px;
+	left: 480px;
+	animation: block 1.5s infinite linear;
+}
+@keyframes block {
+	0% {left: 580px;}
+	100%{left: -40px;}
+}
+
+
+
+/*MESSAGE FOR PHONE USERS*/
+#media-query-phone {
+	display: none;
+	color: blue;
+	padding: 10px; 
+	text-align: center; 
+}
+/*MEDIA QUERY MOBILE-PHONE*/
+@media (max-width: 440px) {
+	#media-query-phone {
+		display: block;
+	}
+	#intro {
+		display: none;
+	}
+	#game-container {
+		display: none;
+	}
+}
