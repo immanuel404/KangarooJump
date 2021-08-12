@@ -65,15 +65,26 @@
 }
 
 
-
-/*MESSAGE FOR PHONE USERS*/
+/*MEDIA QUERY LAPTOPS_**background-image**/
+@media (min-width: 1025px) {
+	#mainContainer {
+		width: 100%;
+		height: 100vh;
+		padding: 40px;
+		margin: 0px auto;
+		box-sizing: border-box;
+		background-size: cover;
+		background-image: url("img/bigImage.png");
+	}
+}
+/*MESSAGE FOR PHONE USERS_**portrait mode**/
 #media-query-phone {
 	display: none;
 	color: blue;
 	padding: 10px; 
 	text-align: center; 
 }
-/*MEDIA QUERY MOBILE-PHONE*/
+/*MEDIA QUERY MOBILE-PHONE_**portrait mode**/
 @media (max-width: 440px) {
 	#media-query-phone {
 		display: block;
