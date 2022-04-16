@@ -1,5 +1,5 @@
 # web_Game2-KangarooJump
-A simple game with a score board, that requires evading obstacles with precise jumps to win_ built with javascript.
+A simple game requires jumping over obstacles to gain points_ built with JavaScript.
 
 Link: https://immanuel404.github.io/web_Game2-KangarooJump/
 
